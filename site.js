@@ -3,8 +3,6 @@ var navigation = document.getElementById("navigation");
 
 
 window.addEventListener("scroll", function (evt) {
-    console.log("body - " + body.scrollTop);
-    console.log("nav - " + navigation.getBoundingClientRect().bottom);
     if (body.scrollTop > navigation.getBoundingClientRect().bottom) {
         navigation.className = "navbar navfixed";
     } else {
@@ -13,6 +11,7 @@ window.addEventListener("scroll", function (evt) {
 });
 
 function loadContent(source) {
+    console.log(source);
     var xmlhttp;
     if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
