@@ -1,6 +1,6 @@
 //var body = document.getElementById("bodyElement");//document.getElementsByTagName("body")[0];
 var navigation = document.getElementById("navigation");
-
+loadContent('home.html');
 
 window.addEventListener("scroll", function (evt) {
     if (window.pageYOffset > navigation.getBoundingClientRect().bottom || document.documentElement.scrollTop > navigation.getBoundingClientRect().bottom || document.body.scrollTop > navigation.getBoundingClientRect().bottom || 0 > navigation.getBoundingClientRect().bottom) {

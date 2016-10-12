@@ -69,7 +69,7 @@ h3 {
     z-index: 1;
 }
 
-a {
+.bannerwrap a {
     font-family: Lato, sans-serif;
     font-size: 14px;
     font-weight: normal;
@@ -77,12 +77,12 @@ a {
     line-height: normal;
     color: white;
     text-decoration: none;
-    padding: 20px 24px;
+    padding: 22px 24px;
     display: block;
     background: transparent;
 }
 
-a:hover {
+.bannerwrap a:hover {
     background: black;
 }
 
@@ -123,4 +123,8 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+.content {
+    padding: 45px 60px 60px;
 }

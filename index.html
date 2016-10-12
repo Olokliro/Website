@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="olokliro.css">
     
 </head>
-<body>
+<body id="bodyElement">
 <div class="wrapper">
     <div class="bannerwrap">
         <div class="bannerheader">
@@ -30,20 +30,21 @@
             </tr></table>
 
         </div>
-    </div>
-    <div class="navbar navstatic" id="navigation">
-        <div class="inlineElement">
-            <h3>OLOKLIRO</h3>
+        <div class="navbar navstatic" id="navigation">
+            <div class="inlineElement">
+                <h3>OLOKLIRO</h3>
+            </div>
+            <ul>
+                <li><a href="#" onclick="loadContent('home.html');">Home</a></li>
+                <li><a href="#" onclick="loadContent('iass.html');">Integration As A Service</a></li>
+                <li><a href="#" onclick="loadContent('migration.html');">Data/Platform Migration</a></li>
+                <li><a href="#" onclick="loadContent('endpoints.html');">Endpoints</a></li>
+                <li><a href="#" onclick="loadContent('contact.html');">Contact</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#" onclick="loadContent('iass.html');">Integration As A Service</a></li>
-            <li><a href="#">Data/Platform Migration</a></li>
-            <li><a href="#">Endpoints</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
     </div>
-    <div id="content" style="height: 1500px;"></div>
+  
+    <div id="content" class="content" style="height:1500px;"></div>
 
 </div>
 <script src="site.js"></script>
