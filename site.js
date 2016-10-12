@@ -11,7 +11,7 @@ window.addEventListener("scroll", function (evt) {
 });
 
 function loadContent(source) {
-    console.log(source);
+    console.log(source - 'updated');
     var xmlhttp;
     if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
@@ -20,11 +20,13 @@ function loadContent(source) {
         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
     }
     xmlhttp.onreadystatechange = function () {
+        console.log(xmlhttp);
         if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
             console.log(xmlhttp.responseText);
             document.getElementById("content").innerHTML = xmlhttp.responseText;
         }
     }
+    
     xmlhttp.open("GET", source, true);
     xmlhttp.send();
 }
