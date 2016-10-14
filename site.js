@@ -29,4 +29,5 @@ function loadContent(source) {
     
     xmlhttp.open("GET", source, true);
     xmlhttp.send();
+
 }
